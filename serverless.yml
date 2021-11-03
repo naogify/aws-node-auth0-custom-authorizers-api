@@ -6,8 +6,9 @@ plugins:
 
 provider:
   name: aws
+  lambdaHashingVersion: 20201221
   runtime: nodejs12.x
-  region: us-west-2
+  region: ap-northeast-1
   environment:
     AUTH0_CLIENT_ID: ${file(./secrets.json):AUTH0_CLIENT_ID}
     AUTH0_CLIENT_PUBLIC_KEY: ${file(./public_key)}
